@@ -7,6 +7,7 @@ sudo aptitude install -y -o Aptitude::ProblemResolver::SolutionCost='100*cancele
 sudo pip install cmake
 export CC=clang-6.0
 export CXX=clang++-6.0
+cd ../
 git clone -b Obsidian-Development --single-branch https://github.com/ObsidianProtocol/obsidian.git
 cd turtlecoin
 mkdir build
