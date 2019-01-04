@@ -9,7 +9,7 @@ export CC=clang-6.0
 export CXX=clang++-6.0
 cd ../
 git clone -b Obsidian-Development --single-branch https://github.com/ObsidianProtocol/obsidian.git
-cd turtlecoin
+cd obsidian
 mkdir build
 cd build
 cmake ..
