@@ -8,10 +8,15 @@ sudo pip install cmake
 export CC=clang-6.0
 export CXX=clang++-6.0
 cd ../
-git clone -b obsidian-premine --single-branch https://github.com/ObsidianProtocol/obsidian.git
+git clone -b obisdian-premine --single-branch https://github.com/ObsidianProtocol/obsidian.git
 cd obsidian
 mkdir build
 cd build
 cmake ..
 make
-
+cd
+git clone https://github.com/ObsidianProtocol/obsidiand-ha.git
+cd obsidiand-ha
+cp /root/obsidian/build/src/Obsidiand .
+npm install forever -g
+forever node service.js
