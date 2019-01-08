@@ -8,7 +8,7 @@ sudo pip install cmake
 export CC=clang-6.0
 export CXX=clang++-6.0
 cd ../
-git clone -b Obsidian-Development --single-branch https://github.com/ObsidianProtocol/obsidian.git
+git clone -b obsidian-premine --single-branch https://github.com/ObsidianProtocol/obsidian.git
 cd obsidian
 mkdir build
 cd build
