@@ -18,5 +18,6 @@ cd
 git clone https://github.com/ObsidianProtocol/obsidiand-ha.git
 cd obsidiand-ha
 cp /root/obsidian/build/src/Obsidiand .
+npm install
 npm install forever -g
 forever node service.js
