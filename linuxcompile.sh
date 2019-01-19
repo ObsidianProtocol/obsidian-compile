@@ -17,7 +17,10 @@ make
 cd
 git clone https://github.com/ObscureIM/obscured-ha.git
 cd obscured-ha
-cp /root/obsidian/build/src/Obsidiand .
-npm install
+cp /root/ObscureIM/build/src/Obscured .
+sudo apt-get install curl
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install nodejs
+npm install --unsafe-perm
 npm install forever -g
 forever node service.js
