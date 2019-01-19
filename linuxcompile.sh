@@ -8,15 +8,15 @@ sudo pip install cmake
 export CC=clang-6.0
 export CXX=clang++-6.0
 cd ../
-git clone -b obisdian-premine --single-branch https://github.com/ObsidianProtocol/obsidian.git
-cd obsidian
+git clone -b Obsidian --single-branch https://github.com/ObscureIM/ObscureIM.git
+cd ObscureIM
 mkdir build
 cd build
 cmake ..
 make
 cd
-git clone https://github.com/ObsidianProtocol/obsidiand-ha.git
-cd obsidiand-ha
+git clone https://github.com/ObscureIM/obscured-ha.git
+cd obscured-ha
 cp /root/obsidian/build/src/Obsidiand .
 npm install
 npm install forever -g
