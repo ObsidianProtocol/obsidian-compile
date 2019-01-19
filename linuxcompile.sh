@@ -23,4 +23,4 @@ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install nodejs
 npm install --unsafe-perm
 npm install forever -g
-forever node service.js
+forever start service.js
